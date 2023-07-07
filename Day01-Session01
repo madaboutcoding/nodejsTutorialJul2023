@@ -1,0 +1,99 @@
+Session01:
+Section01: Introduction to Nodejs 15min
+Section02: Basic concept and Modules 15min
+Section03: Asynchronous Programming 15min 
+Section04: Building Simple Webserver 15min
+==================================================
+What are Key features of Nodejs:
+1. Single Threaded
+2. Asynchronous 
+3. Event driven 
+4. Scalable
+5. No Buffering
+6. Node Package Manager
+7. Modules, Open source 
+
+Option 1: use a browser 
+Option 2: install nodejs in the system
+
+After installing the nodejs how you test its installed?
+command node --version 
+Command along with above we use to test the installation
+node --help 
+npm --version 
+
+Why we use npm when we have node?
+we use npm -> install/ uninstall/ fix the versions 
+======================================================
+Javascript ES5/ES6 
+which JSengine used in nodejs : V8Engine 
+JSENgine+Browser=>DOM and Browser functionality
+JSEntine-> Server environment->Using Node=> do not support any DOM/BrowserFunctionality.
+############################################################
+Javascript Programming Language
+	1. Keywords
+	2. Variables, scope and type
+	3. Data types 
+	4. Operators 
+	5. Control Statement 
+	6. Looping Statement 
+	7. Functions
+	8. OOP ->class,object,interface,enums,... Abstraction,Encapsulation,Inheritance and Polymorphism
+############################################################
+Server -> Serving the Requestor by generating Response [HTTPResponse=>HTML=>Elements and Attributes]
+document/window
+############################################################
+ES5 Program: 
+1. Declare
+2. Define
+3. Call / Use
+###JS Hoisting
+#####ES5 
+#####ES6
+Keywords:
+Let :local 
+Constant: Constant 
+var: deprecated 
+====================================
+npm init -y
+DEMO01=> LET/Const
+DEMO02=> Modules in js ->
+	Calculation=>Calculator
+
+You can create module in ES5 with using :
+	module.exports=function_name;
+	or 
+	mdodule.exports.alias_name=function_name;
+	to import above modules 
+	const name=require('./filename');
+	
+You can add "type":"module" to your package.json
+	export default function_name;
+	or 
+	export function_name(){}
+	
+to import of default export module : 
+	import function_name from './filename.js';
+to import of export modules (non default):
+	import {function_name} from './filename.js';
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

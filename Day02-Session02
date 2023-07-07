@@ -1,0 +1,117 @@
+node=> Core Modules
+1. Http=>
+	client ---- server communicate over Protocol called as Http
+	Request and Response Cycle
+HTTP=> HttpRequest
+	   HttpResponse
+	   HttpMethods
+	   Headers=>Request/Response
+	   State Management=>session/cookies
+	   
+HTTPRequest[data]====> server 
+key:Value => input:names=>Key 
+		  => input:value=>value
+HTTPRequest=>Data => Validation (Client/Server)
+HTTPRequest["Method"]=>GET,POST,PUT,DELETE,....
+SERVER BUSINESS LOGIC:
+
+GET		-> FETCH DATA FROM SERVER 
+POST	-> SUBMITTING DATA TO THE SERVER 
+PUT	    -> DATA MAY OR MAYNOT BE AVAILABLE UPDATE / CREATE
+DELETE  -> DATA IS DELETE
+
+BROWSER=> MAKING ONLY HTTP METHOD : GET 
+HTML=>FORM ELEMENT WHICH GIVES OPTION GET/POST 
+HTTPCLIENT LOGIC USING JQUERY TO MAKE $.AJAX("PUT",) OR $.AJAX("DELETE",)
+
+HttpResponse=> MIME text/html or text/text application/json
+==============================================================
+View 
+	1. HttpRequest ->Input
+	2.	HttpMethods
+		->HttpResponse ->output
+			1. Text
+			2. HTML 
+			3. sendFile->html 
+			4. sendFile->JSON
+===========================================================
+Response	
+->html file as response
+	-> Asychronously
+	-> Synchronously
+http.createServer((req,resp)=>{
+    fs.readFile("./index.html",(err,data)=>{
+        resp.setHeader("Content-Type","text/html");
+        if(err){
+            resp.write("Error occured");
+        }
+        resp.write(data);
+        return resp.end();
+    });
+}).listen(PORT,()=>console.log(msg));
+	
+	
+Part I : 	
+http.createServer((req,resp)=>{
+	fs.readFile((filepath,callback));// its time consuming+Async 
+});	
+Part II
+
+http.createServer((req,resp)=>{
+
+	fs.readFile(fileName,(err,data)=>{
+		if(err) clg(err);
+		resp.write(data);	
+		return resp.end();
+	});
+});
+
+
+	LIne 1
+	Line 2
+	LIne 3
+	LIne 4
+	... 10
+	
+=========================================================================
+assignment01: Create a server to display 
+index.html
+	->style.css (body{background-color:black; color:white})
+	->main.js  (client script) 	console.log("main.js called");
+<div class="container">
+	<header></header>
+	<main></main>
+	<footer></footer>
+<div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
