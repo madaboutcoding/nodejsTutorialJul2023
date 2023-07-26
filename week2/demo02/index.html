@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <button id="btn1">Click here to call POST</button>
+        <button id="btn2">Click here to call GET</button>
+        <button id="btn3">Click here to call PUT</button>
+        <button id="btn4">Click here to call DELETE</button>
+    </div>
+    <script>
+        $(function(){
+            $("#btn1").on("click",()=>{
+                console.log("bt1 called");
+                $.post("http://localhost:3000", function(data, status){
+                     alert("Data: " + data + "\nStatus: " + status);
+                });
+            });
+            $("#btn2").on("click",()=>{
+                console.log("bt2 called");
+                $.get("http://localhost:3000", function(data, status){
+                    alert("Data: " + data + "\nStatus: " + status);
+                });
+            });
+            $("#btn3").on("click",()=>{});
+            $("#btn4").on("click",()=>{});
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+Http Module
+1. request
+2. response
+3. httpMethod
+	GET
+	POST
+	PUT
+	DELETE
+Demo01-> 
+	server: All http methods called by request and getting response 
+Demo02->
+	server -> share a file with the user 
+				Button 
+					Ajax call ->>> Demo01 
+					
+					
+		
+Demo01 -> :3000 -> Set Resources
+Demo02 -> :4000 -> Requesting Demo01 Resources
+Cross Orging Resource Sharing 	
+
+Nodejs -> http-> express module middleware 
+1. Using Http Methods we can directely serve the request	
+	express has methods .get(),.post(),.put(),.delete()
+	express has middleware in it to support 
+		1 . CORS
+		2. Bodyparsing 
+		3. json 
+		
+#######################################################		
+Nodejs & Express js -> Server Environment -> Backend ->REST API's 
+REST API'S = GIVING DATA JSON/PDF/DOCUMENT/MIME
+HTTP SERVER 
+#######################################################
+UI=> FONT END => FRONT END FRAMEWORKDS => ANGULAR/REACT/VUE
+	NODEJS SERVER HOSTING UI
+	UI -> REST API CALL 
+		-> HTTP CLIENT
+#######################################################
